@@ -1,0 +1,128 @@
+body 
+{
+    background-image : url(Images/fond.png);
+	display : flex;
+	width : 95%;
+	height : 95%;
+	align-items : center;
+	justify-content : center;
+	flex-direction: row;
+}
+
+section 
+{
+	width : 350px;
+	height : 350px;
+	padding : auto;
+}
+#winner
+{
+	text-align: :center;
+	align-items: center;
+	width : 90%;
+}
+TD 
+{
+	border : 2px solid black;
+	width : 100px;
+	height : 100px;
+	background-color : white;
+	text-align : center;
+	cursor : pointer;
+}
+TD:hover 
+{
+	border : 2px solid black;
+	width : 100px;
+	height : 100px;
+	background-color : rgb(60,60,60);
+	text-align : center;
+	cursor : pointer;
+}
+.tdX
+{
+	border : 2px solid black;
+	width : 100px;
+	height : 100px;
+	background-color : rgb(57,68,150);
+	text-align : center;
+	cursor : pointer;
+}
+.tdO
+{
+	border : 2px solid black;
+	width : 100px;
+	height : 100px;
+	background-color : rgb(196,24,24);
+	text-align : center;
+	cursor : pointer;
+}
+.tdWinner
+{
+	border : 4px solid black;
+	border-radius: 7px;
+	box-shadow: 0 0 15px white;
+	width : 100px;
+	height : 100px;
+	background-color : rgb(86,118,135);
+	text-align : center;
+	cursor : pointer;
+	animation: rainbowRotation 5s 0s infinite alternate linear; /*alternate | forwards*/
+}
+
+.tdPersonne
+{
+	border : 2px solid black;
+	width : 100px;
+	height : 100px;
+	background-color : rgb(255,20,20);
+	text-align : center;
+	cursor : pointer;
+}
+
+.rotationAll
+{
+	cursor : pointer;
+	animation: cubeRotation 5s 0s infinite alternate linear; /*alternate | forwards*/
+}
+
+@keyframes rainbowRotation {
+    0% {
+        background-color: #f45042;
+        transform: rotate(0deg);
+    }
+    25% {
+        background-color: #47f441;
+        transform: rotate(90deg);
+    }
+    50% {
+        background-color: #4055f7;
+        transform: rotate(180deg);
+    }
+    75% {
+        background-color: #f740db;
+        transform: rotate(270deg);
+    }
+    100% {
+        background-color: #f45042;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cubeRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

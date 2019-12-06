@@ -1,0 +1,53 @@
+<HTML>
+	<TITLE>
+		
+	</TITLE>
+	<HEAD>
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet" type="text/css"  media="screen"/>  
+		<script type="text/javascript" src="code.js"></script>
+	</HEAD>
+	<BODY>
+		<section id="level">
+			<select id="lvlChoice">
+				<option>Choisir Niveau</option>
+				<option value="lvl0">1 vs 1</option>		<!--1vs1-->
+				<option value="lvl1">Facile</option>		<!--Hasard-->
+				<option value="lvl2">Moyen</option>			<!--Bloquage-->
+				<option value="lvl2">Difficile</option>		<!--Gagne sinon Bloque sinon Hasard-->
+				<option value="lvl4">Impossible</option>	<!--Impossible-->
+			</select>
+		</section>
+		<section>
+			<TABLE id="table">
+				<TR>
+					<TD id="c0"> </TD>
+					<TD id="c1"> </TD>
+					<TD id="c2"> </TD>
+				</TR>
+				<TR>
+					<TD id="c3"> </TD>
+					<TD id="c4"> </TD>
+					<TD id="c5"> </TD>
+				</TR>
+				<TR>
+					<TD id="c6"> </TD>
+					<TD id="c7"> </TD>
+					<TD id="c8"> </TD>
+				</TR>
+		
+			</TABLE>
+			<p id="winner"></p>
+			<button onclick="reset();">Reset</button>
+		</section>
+		<section id="utilisateur">
+			<aside class="choiceAside">Joueur 1 (X): <input type="color" name="colorchoice" id="colorChoice"></aside>
+			<aside class="choiceAside">Joueur 2 (O): <input type="color" name="colorchoice" id="colorChoice2"></aside>
+		</section>
+		<section>
+			<p id="heure"></p>
+			<p id="tempsDeJeux"></p>
+		</section>
+	</BODY>
+
+</HTML>
