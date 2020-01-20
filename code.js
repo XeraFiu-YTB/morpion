@@ -120,6 +120,7 @@ function level() {
 	var level = document.getElementById('lvlChoice');
 	choice = level.selectedIndex
 	console.log(level.options[choice].text)
+	console.log('New Version')
 	if(a == false) {reset(),console.log('--- Changement de Niveau ---')}
 	if(choice == 1 && a == true) {
 		a = false
