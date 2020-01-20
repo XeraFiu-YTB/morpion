@@ -606,8 +606,8 @@ function verifBloquage() {
 			bloquage = true
 		}
 		if(bloquage == true) {
-			let already = false
-			if(c0 == true && already == false){document.getElementById('c0').innerHTML = "O",document.getElementById("c0").style.backgroundColor = `${couleurJ2}`,caseO.push('c0'),caseCliquable.splice(caseCliquable.indexOf('c0'), 1),c0 = false, already = true}
+			var already = false
+			if(c0 == true && already == false){document.getElementById('c0').innerHTML = "O",document.getElementById("c0").style.backgroundColor = `${couleurJ2}`,caseO.push('c0'),caseCliquable.splice(caseCliquable.indexOf('c0'), 1),c0 = false, already = true,console.log('/////////////////0')}
 			if(c1 == true && already == false){document.getElementById('c1').innerHTML = "O",document.getElementById("c1").style.backgroundColor = `${couleurJ2}`,caseO.push('c1'),caseCliquable.splice(caseCliquable.indexOf('c1'), 1),c1 = false, already = true}
 			if(c2 == true && already == false){document.getElementById('c2').innerHTML = "O",document.getElementById("c2").style.backgroundColor = `${couleurJ2}`,caseO.push('c2'),caseCliquable.splice(caseCliquable.indexOf('c2'), 1),c2 = false, already = true,console.log('/////////////////')}
 			if(c3 == true && already == false){document.getElementById('c3').innerHTML = "O",document.getElementById("c3").style.backgroundColor = `${couleurJ2}`,caseO.push('c3'),caseCliquable.splice(caseCliquable.indexOf('c3'), 1),c3 = false, already = true}
